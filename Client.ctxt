@@ -1,0 +1,12 @@
+#BlueJ class context
+comment0.params=nom
+comment0.target=Client(java.lang.String)
+comment0.text=\n
+comment1.params=inserveur
+comment1.target=boolean\ seConnecter(Serveur)
+comment1.text=\n\ Un\ exemple\ de\ m\u00E9thode\ -\ remplacez\ ce\ commentaire\ par\ le\ v\u00F4tre\n\n
+comment2.params=inmessage
+comment2.target=void\ envoyer(java.lang.String)
+comment3.params=inmessage
+comment3.target=java.lang.String\ recevoir(java.lang.String)
+numComments=4
