@@ -3,7 +3,7 @@ import java.util.Iterator;
 
 public class Serveur
 {
-    private ArrayList<Client> liste_clients;
+    private ArrayList<Client> liste_clients; // liste de clients connéctes au serveur
 
     public Serveur()
     {
@@ -12,22 +12,22 @@ public class Serveur
 
     public boolean connecter(Client client)
     {
-        if(liste_clients.contains(client)) 
+        if(liste_clients.contains(client)) // si client deja connecté pas d'ajout
         {
             return false;
         }
         else 
         {
-            return liste_clients.add(client);
+            return liste_clients.add(client); // ajouter au serveur return true
         }
     }
     
     public void diffuser(String message)
     {
-        Iterator<Client> l = liste_clients.iterator();
+        Iterator<Client> l = liste_clients.iterator(); //parcours liste
         
-        while(l.hasNext()) {
-            l.next().recevoir(message);
+        while(l.hasNext()) { // verifier suivant existe => liste pas encore vide
+            l.next().recevoir(message); // recevoir message
         }
     }
 }

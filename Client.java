@@ -18,7 +18,7 @@ public class Client
     public boolean seConnecter(Serveur inserveur)
     {
         
-       if(inserveur.connecter(this)==false)
+       if(inserveur.connecter(this)==false) // ".connecter" retourne vrai ou faux
             return false;
         else 
         {
