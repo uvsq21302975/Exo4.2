@@ -30,4 +30,16 @@ public class Serveur
             l.next().recevoir(message); // recevoir message
         }
     }
+    
+    public static void main(String [] args)
+	{
+		//creer serveur et client: seconnecter et envoyermessage
+		Serveur serveur = new Serveur();
+		Client client = new Client("zak");
+		client.seConnecter(serveur);
+		client.envoyer("hola");
+	}
+    
+    
+    
 }

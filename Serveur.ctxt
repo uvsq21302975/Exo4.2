@@ -5,4 +5,6 @@ comment1.params=client
 comment1.target=boolean\ connecter(Client)
 comment2.params=message
 comment2.target=void\ diffuser(java.lang.String)
-numComments=3
+comment3.params=args
+comment3.target=void\ main(java.lang.String[])
+numComments=4

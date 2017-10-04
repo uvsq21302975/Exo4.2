@@ -36,6 +36,8 @@ public class Client
 
     public String recevoir(String inmessage)
     {
+        System.out.println("message recu");
         return inmessage;
+        
     }
 }
